@@ -38,4 +38,7 @@ func decodeTransliterations() {
 		}
 		transliterations[int(chr)] = []rune(string(b))
 	}
+	// Ñ
+	transliterations[209] = []rune(string("Ñ"))
+	transliterations[241] = []rune(string("ñ"))
 }
